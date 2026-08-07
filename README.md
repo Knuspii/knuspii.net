@@ -1,4 +1,4 @@
-# knuspii.net [![pages-build-deployment](https://github.com/Knuspii/knuspii.net/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Knuspii/knuspii.net/actions/workflows/pages/pages-build-deployment)
+# knuspii.net [![Deploy static content to Pages](https://github.com/Knuspii/knuspii.net/actions/workflows/static.yml/badge.svg)](https://github.com/Knuspii/knuspii.net/actions/workflows/static.yml)
 My Status Page
 
 ## 🔒 Privacy Notice (Datenschutzerklärung)
