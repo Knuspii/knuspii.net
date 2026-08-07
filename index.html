@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>knuspii.net</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="data/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://knuspii.net" />
+    <meta name="description" content="Personal Website." />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="knuspii.net" />
+    <meta property="og:url" content="https://knuspii.net" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="scanline"></div>
+
+    <header class="navbar-container">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <pre class="ascii-nav" aria-hidden="true">
+
+░█░█░█▀█░█░█░█▀▀░█▀█░▀█▀░▀█▀░░░█▀█░█▀▀░▀█▀░
+░█▀▄░█░█░█░█░▀▀█░█▀▀░░█░░░█░░░░█░█░█▀▀░░█░░
+░▀░▀░▀░▀░▀▀▀░▀▀▀░▀░░░▀▀▀░▀▀▀░▀░▀░▀░▀▀▀░░▀░░
+          </pre>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="nav-item active">[01] Terminal</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Knuspii"
+              target="_blank"
+              rel="noopener"
+              class="nav-item"
+            >[02] GitHub ➔</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Knuspii/knuspii.net"
+              target="_blank"
+              rel="noopener"
+              class="nav-item"
+            >[03] Info ➔</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <div class="terminal-container glass-terminal">
+        <div class="terminal-header">
+          <div class="window-controls">
+            <span class="btn close"></span>
+            <span class="btn min"></span>
+            <span class="btn max"></span>
+          </div>
+          <div class="title">
+            root@knuspii-node-01: /usr/bin/terminal-web
+          </div>
+          <div class="live-indicator">
+            <span class="blink-dot"></span> SYSTEM_ONLINE
+          </div>
+        </div>
+
+        <div class="fingerprint-bar">
+          <span class="fp-item">
+            SESSION <span id="fp-session">········</span>
+          </span>
+          <span class="fp-item">TZ <span id="fp-tz">--</span></span>
+          <span class="fp-item">
+            UPTIME <span id="fp-uptime">00:00:00</span>
+          </span>
+        </div>
+
+        <div class="terminal-body">
+          <div class="script-execution">
+            <div id="exec-logs"></div>
+          </div>
+
+          <div
+            id="status-divider"
+            class="divider"
+            style="display: none"
+          >
+            <span>// CLUSTER STATUS MONITOR</span>
+          </div>
+
+          <div id="status-wrapper" style="display: none"></div>
+
+          <div
+            id="whoami-wrapper"
+            class="whoami-wrapper"
+            style="display: none"
+          >
+            <div class="divider"><span>// ABOUT ME</span></div>
+            <div class="whoami-grid">
+              <div class="whoami-row">
+                <span class="whoami-key">ROLE</span>
+                <span class="whoami-val">Sysadmin</span>
+              </div>
+              <div class="whoami-row">
+                <span class="whoami-key">FOCUS</span>
+                <span class="whoami-val">
+                  Linux & Self-Hosting & Gaming & Coding
+                </span>
+              </div>
+              <div class="whoami-row">
+                <span class="whoami-key">QUOTE</span>
+
+                <blockquote class="whoami-val">
+                  <p>A Windows user clicks the power button and before the desktop even loads Windows has already scheduled three updates, started indexing the concept of files itself, launched 19 processes with names ending in "Host", summoned Edge through dark magic, and decided the RGB software for the keyboard is now a national security threat while Defender is busy performing digital archaeology on a file called <code>totally_not_virus_final_REAL_v17.dll</code> from 2016. OneDrive sees a screenshot of a frog and immediately uploads it to a server 7000 kilometers away because clearly future generations must preserve this artifact. Halfway through opening Steam, Windows pauses everything to ask if they'd like to try Microsoft 365 because nothing says gaming like an Excel subscription, and the cooling fan achieves escape velocity causing nearby birds to alter their migration route.</p>
+                  <p>Meanwhile the Linux user updates their entire system with their package manager, rebuilds their development environment from scratch, deploys a production server before lunch, and the fan still hasn't turned on since 2019.</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="quote-section">
+        <blockquote class="quote">
+          "I might just sudo rm -rf /*"
+        </blockquote>
+        <span class="quote-author">
+          <a href="mailto:meiko@linux.com">meiko@linux.com</a>
+        </span>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
